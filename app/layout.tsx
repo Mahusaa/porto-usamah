@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import LiveCursors from "./components/live-cursors";
-import { PresenceProvider } from "./components/presence-context";
+import MobileNav from "./components/mobile-nav";
 
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
@@ -27,10 +26,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${hanken.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <PresenceProvider>
-          {children}
-          <LiveCursors />
-        </PresenceProvider>
+        {children}
+        <MobileNav />
       </body>
     </html>
   );

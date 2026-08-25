@@ -16,6 +16,14 @@ export function LinkedinIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+export function XIcon({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M17.53 3h3.02l-6.6 7.54L21.75 21h-6.08l-4.76-6.23L5.46 21H2.44l7.06-8.07L2.25 3h6.23l4.3 5.69L17.53 3Zm-1.06 16.2h1.67L7.6 4.71H5.81l10.66 14.49Z" />
+    </svg>
+  );
+}
+
 export function MailIcon({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -45,6 +53,47 @@ export function Monogram({ className = "h-7 w-7" }: IconProps) {
         strokeWidth="2.5"
         strokeLinecap="round"
       />
+    </svg>
+  );
+}
+
+/* ---- bottom bar, mobile ---- */
+
+export function HomeIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M3.5 10.4 12 3.6l8.5 6.8" />
+      <path d="M5.6 9v10.4h12.8V9" />
+      <path d="M9.9 19.4v-5.1h4.2v5.1" />
+    </svg>
+  );
+}
+
+export function WritingIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden>
+      <path d="M5 6.4h14" />
+      <path d="M3.2 10.3h17.6" />
+      <path d="M5 14.2h14" />
+      <path d="M3.2 18.1h17.6" />
+    </svg>
+  );
+}
+
+export function BriefcaseIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <rect x="3.4" y="7.4" width="17.2" height="11.6" rx="1.8" />
+      <path d="M9 7.4V5.9c0-.7.6-1.3 1.3-1.3h3.4c.7 0 1.3.6 1.3 1.3v1.5" />
+      <path d="M3.4 12.6h17.2" />
+    </svg>
+  );
+}
+
+export function SendIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M20.4 3.6 3.9 10.2c-.8.3-.8 1.5.1 1.7l7 1.9 2 6.9c.3.9 1.4.9 1.7.1l6.6-16.4c.2-.6-.3-1.1-.9-.8Z" />
     </svg>
   );
 }

@@ -10,17 +10,11 @@ import {
   GithubIcon,
   LinkedinIcon,
   MailIcon,
+  XIcon,
 } from "./components/icons";
 
 // live GitHub calendar + computed role durations, refreshed hourly
 export const revalidate = 3600;
-
-const nav = [
-  { label: "Work", href: "#work" },
-  { label: "Projects", href: "#projects" },
-  { label: "Stack", href: "#stack" },
-  { label: "Contact", href: "#contact" },
-];
 
 const links = [
   { label: "GitHub", href: "https://github.com/mahusaa", icon: GithubIcon },
@@ -29,6 +23,7 @@ const links = [
     href: "https://linkedin.com/in/usamah-hafizh",
     icon: LinkedinIcon,
   },
+  { label: "X", href: "https://x.com/mahusaa", icon: XIcon },
   { label: "Email", href: "mailto:hakaro375@gmail.com", icon: MailIcon },
 ];
 
@@ -339,11 +334,13 @@ export default function Home() {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full border border-rule bg-white/60 px-3.5 py-1.5 font-display text-[0.78rem] font-medium text-ink/80 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-light hover:bg-white hover:text-accent hover:shadow-sm"
+                aria-label={label}
+                className="group inline-flex items-center gap-2 rounded-full border border-rule bg-white/60 p-2.5 font-display text-[0.78rem] font-medium text-ink/80 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-light hover:bg-white hover:text-accent hover:shadow-sm sm:px-3.5 sm:py-1.5"
               >
-                <Icon className="h-3.5 w-3.5" />
-                {label}
-                <ArrowIcon className="nudge nudge-diag h-3 w-3 text-muted transition-colors group-hover:text-accent" />
+                {/* on phones the pill is the mark alone, label and arrow drop away */}
+                <Icon className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
+                <span className="hidden sm:inline">{label}</span>
+                <ArrowIcon className="nudge nudge-diag hidden h-3 w-3 text-muted transition-colors group-hover:text-accent sm:block" />
               </a>
             ))}
           </div>

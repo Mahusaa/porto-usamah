@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Monogram } from "./icons";
-import Presence from "./presence";
 
 const nav = [
   { label: "Work", href: "/#work" },
@@ -23,36 +22,21 @@ export default function SiteHeader() {
             <span className="hidden sm:inline">Usamah Hafizh</span>
           </Link>
 
-          <div className="flex items-center gap-5">
-            <nav className="hidden sm:block">
-              <ul className="flex items-center gap-6 font-display text-[0.78rem] font-medium uppercase tracking-[0.12em] text-muted">
-                {nav.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link
-                      href={href}
-                      className="link-underline transition-colors hover:text-accent"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <Presence />
-          </div>
+          <nav className="hidden sm:block">
+            <ul className="flex items-center gap-6 font-display text-[0.78rem] font-medium uppercase tracking-[0.12em] text-muted">
+              {nav.map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    className="link-underline transition-colors hover:text-accent"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-
-        <nav className="-mx-5 border-t border-rule px-5 sm:hidden">
-          <ul className="flex items-center gap-5 overflow-x-auto py-2.5 font-display text-[0.72rem] font-medium uppercase tracking-[0.12em] text-muted">
-            {nav.map(({ label, href }) => (
-              <li key={label} className="shrink-0">
-                <Link href={href} className="link-underline">
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </div>
     </header>
   );
