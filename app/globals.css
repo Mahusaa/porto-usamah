@@ -19,6 +19,7 @@
   --color-accent-light: var(--accent-light);
   --font-sans: var(--font-hanken);
   --font-display: var(--font-space);
+  --font-latin: var(--font-latin);
 }
 
 body {

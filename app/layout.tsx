@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk, Space_Grotesk } from "next/font/google";
+import { Cinzel, Hanken_Grotesk, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import MobileNav from "./components/mobile-nav";
 
@@ -13,6 +13,13 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+// the wordmark only: Roman inscriptional capitals, cut like carved Latin
+const cinzel = Cinzel({
+  variable: "--font-latin",
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Usamah Hafizh Ammar Zaim",
   description:
@@ -23,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${hanken.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${hanken.variable} ${spaceGrotesk.variable} ${cinzel.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

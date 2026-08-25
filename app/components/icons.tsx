@@ -42,21 +42,6 @@ export function ArrowIcon({ className = "h-3.5 w-3.5" }: IconProps) {
   );
 }
 
-export function Monogram({ className = "h-7 w-7" }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden>
-      <rect width="24" height="24" rx="6.5" fill="var(--accent)" />
-      <path
-        d="M7.6 6v6.1a4.4 4.4 0 0 0 8.8 0V6"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
 /* ---- bottom bar, mobile ---- */
 
 export function HomeIcon({ className = "h-5 w-5" }: IconProps) {
