@@ -293,7 +293,10 @@ export default function Home() {
       >
         <section id="intro">
           <p className="flex items-center gap-2.5 font-display text-[0.72rem] font-medium uppercase tracking-[0.16em] text-muted">
-            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent-light ring-4 ring-accent-light/30" />
+            <span className="relative flex h-1.5 w-1.5 shrink-0 items-center justify-center">
+              <span className="beacon-ring absolute h-3 w-3 rounded-full bg-accent-light" />
+              <span className="relative h-1.5 w-1.5 rounded-full bg-accent" />
+            </span>
             South Jakarta, Indonesia
           </p>
 

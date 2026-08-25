@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk, Sacramento, Space_Grotesk } from "next/font/google";
+import { Dancing_Script, Hanken_Grotesk, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import MobileNav from "./components/mobile-nav";
 
@@ -13,11 +13,12 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-// the wordmark only: tulisan latin bersambung — one unbroken monoline stroke
-const sacramento = Sacramento({
+// the wordmark only: still bersambung, but a firmer hand than a ballpoint —
+// heavier stroke and a taller x-height, so the name reads at header size
+const dancingScript = Dancing_Script({
   variable: "--font-latin",
   subsets: ["latin"],
-  weight: "400",
+  weight: "600",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${hanken.variable} ${spaceGrotesk.variable} ${sacramento.variable} h-full antialiased`}
+      className={`${hanken.variable} ${spaceGrotesk.variable} ${dancingScript.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

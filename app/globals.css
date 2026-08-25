@@ -178,6 +178,23 @@ html {
   transform: scaleX(1);
 }
 
+/* live location dot: the ring breathes out and fades, a beacon at rest */
+@keyframes beacon {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.6;
+  }
+  70%,
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.beacon-ring {
+  animation: beacon 2s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
 /* arrows that lean the way they point when their row is hovered */
 .nudge {
   transition: transform 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -201,6 +218,12 @@ html {
   .link-underline::after,
   .nudge {
     transition: none;
+  }
+
+  .beacon-ring {
+    animation: none;
+    transform: scale(1.2);
+    opacity: 0.3;
   }
 }
 
