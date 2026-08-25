@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Usamah Hafizh Ammar Zaim",
   description:
-    "Head of Engineering at Pietra Digital Technology. I build AI that reads a public issue the way an analyst would — the narratives behind the noise, not just mention counts.",
+    "Head of Engineering at Pietra Digital Technology. The AI platform I lead explains an issue itself: what is being claimed, who is driving it, and where it heads next.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
