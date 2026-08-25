@@ -16,9 +16,14 @@ export default function SiteHeader() {
              from sm up it steps back to the left and lets the nav have the row */}
           <Link
             href="/"
-            className="absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center font-latin text-[1.3rem] leading-none transition-colors hover:text-accent sm:static sm:left-auto sm:translate-x-0"
+            className="group absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center font-display text-[0.82rem] uppercase tracking-[0.16em] sm:static sm:left-auto sm:translate-x-0"
           >
-            Usamah Hafizh
+            <span className="font-bold transition-colors group-hover:text-accent">
+              Usamah
+            </span>
+            <span className="ml-[0.45em] font-medium text-muted transition-colors group-hover:text-accent">
+              Hafizh
+            </span>
           </Link>
 
           <nav className="hidden sm:block">
