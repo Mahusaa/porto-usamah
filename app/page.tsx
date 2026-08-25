@@ -93,8 +93,8 @@ const work: Job[] = [
         start: "2026-03",
         end: "2026-05",
         points: [
-          "Built a platform that monitors public conversation around a given issue and reconstructs how it unfolded.",
-          "Modelled the narratives, sentiment and responses an issue draws, so the read is on implications rather than raw volume.",
+          "Built a platform that reconstructs an issue end to end: first appearance, the triggers that moved it, escalation, and peak conversation.",
+          "Surfaces the top narratives carrying an issue, who is driving them, and the responses they draw.",
           "Architected the pipelines that collect, clean and cluster conversation data across channels.",
         ],
       },
