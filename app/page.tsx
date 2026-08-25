@@ -294,7 +294,7 @@ export default function Home() {
         <section id="intro">
           <p className="flex items-center gap-2.5 font-display text-[0.72rem] font-medium uppercase tracking-[0.16em] text-muted">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent-light ring-4 ring-accent-light/30" />
-            Depok, Indonesia
+            South Jakarta, Indonesia
           </p>
 
           <h1 className="mt-6 text-[2.1rem] font-bold leading-[1.1] tracking-[-0.025em] sm:text-[3.1rem]">

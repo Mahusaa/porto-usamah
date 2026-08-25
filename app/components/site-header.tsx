@@ -16,7 +16,7 @@ export default function SiteHeader() {
              from sm up it steps back to the left and lets the nav have the row */}
           <Link
             href="/"
-            className="absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center font-latin text-[0.95rem] font-semibold uppercase tracking-[0.18em] transition-colors hover:text-accent sm:static sm:left-auto sm:translate-x-0"
+            className="absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center font-latin text-[1.45rem] leading-none transition-colors hover:text-accent sm:static sm:left-auto sm:translate-x-0"
           >
             Usamah Hafizh
           </Link>
