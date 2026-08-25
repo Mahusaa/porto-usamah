@@ -291,7 +291,7 @@ export default function Home() {
         id="top"
         className="mx-auto w-full max-w-3xl px-5 pb-4 pt-12 sm:px-8 sm:pt-20"
       >
-        <section>
+        <section id="intro">
           <p className="flex items-center gap-2.5 font-display text-[0.72rem] font-medium uppercase tracking-[0.16em] text-muted">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent-light ring-4 ring-accent-light/30" />
             Depok, Indonesia
